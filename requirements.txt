@@ -1,0 +1,6 @@
+loguru
+numpy
+opencv_python
+pandas
+torch
+torchvision
