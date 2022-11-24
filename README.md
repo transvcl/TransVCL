@@ -1,7 +1,7 @@
-# TransVCL: Attention-enhanced Video Copy Localization Network with Flexible Supervision
+# TransVCL: Attention-enhanced Video Copy Localization Network with Flexible Supervision [AAAI2023]
 
 ## Introduction
-TransVCL is a novel network with joint optimization of multiple components for segment-level video copy detection. It achieves the state-of-the-art performance in video copy segment localization benchmark and can also be flexibly extended to semi-supervised settings.
+TransVCL is a novel network with joint optimization of multiple components for segment-level video copy detection. It achieves the state-of-the-art performance in video copy segment localization benchmark and can also be flexibly extended to semi-supervised settings. This paper is accepted by AAAI2023. The details of TransVCL are indicated in [Link](https://arxiv.org/abs/2211.13090).
 
 ## Preparations
 * Download or extract frame-level video features and put them under directory `data/${DATASET}/features/`.
@@ -31,11 +31,24 @@ You should see the output performance. In the case of VCSL and model_1, the resu
 ```
 
 
-## Next-step
-The following content will also be released after paper acceptance.
-- [ ] Release of training codes.
-- [ ] Semi-supervised and weakly supervised training steps.
-- [ ] Visualization scripts in TransVCL.
+## Cite TransVCL
+If the code is helpful for your work, please cite our paper
+```
+@inproceedings{he2023transvcl,
+  title={TransVCL: Attention-enhanced Video Copy Localization Network with Flexible Supervision},
+  author={He, Sifeng and Yue, He and Lu, Minlong and others},
+  booktitle={37th AAAI Conference on Artificial Intelligence: AAAI 2023},
+  year={2022}
+}
+
+@inproceedings{he2022large,
+  title={A Large-scale Comprehensive Dataset and Copy-overlap Aware Evaluation Protocol for Segment-level Video Copy Detection},
+  author={He, Sifeng and Yang, Xudong and Jiang, Chen and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={21086--21095},
+  year={2022}
+}
+```
 
 
 ## License
@@ -44,7 +57,7 @@ The code is released under MIT license
 ```bash
 MIT License
 
-Copyright (c) 2022 transvcl
+Copyright (c) 2022 Ant Group
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
