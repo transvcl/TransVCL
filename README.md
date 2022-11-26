@@ -2,13 +2,13 @@
 
 ## Introduction
 TransVCL is a novel network with joint optimization of multiple components for segment-level video copy detection. It achieves the state-of-the-art performance in video copy segment localization benchmark and can also be flexibly extended to semi-supervised settings. This paper is accepted by AAAI2023. The details of TransVCL are indicated in [Link](https://arxiv.org/abs/2211.13090).
+![vcsl](./fig.png)
 
 ## Preparations
 * Download or extract frame-level video features and put them under directory `data/${DATASET}/features/`.
 Features of VCSL dataset are given in [VCSL benchmark](https://github.com/alipay/VCSL), and features of VCDB dataset need 
 to be extracted following [ISC competition](https://github.com/lyakaap/ISC21-Descriptor-Track-1st).
-* Download our pretrained model in `transvcl/weights/pretrained_models.zip`. The unzipped password is the submission number 
-of our paper. We provides two models (model_1.pth and model_2.pth). model_1.pth is trained in fully supervised setting on VCSL 
+* Download our pretrained model in `transvcl/weights/pretrained_models.txt`.  We provides two models (model_1.pth and model_2.pth). model_1.pth is trained in fully supervised setting on VCSL 
 dataset and you can reproduce results in Table 1. model_2 is trained with weakly semi-supervised setting on 
 VCSL and FIVR&SVD and you can reproduce results in Table 5.
 * Install python requirements in `requirements.txt`.
@@ -30,6 +30,26 @@ You should see the output performance. In the case of VCSL and model_1, the resu
 - result file: results/model/VCSL/result.json, data cnt: 55530, macro-Recall: 65.59%, macro-Precision: 67.46%, F1: 66.51%
 ```
 
+## Benchmark
+After executing the above several steps, the overall segment-level precision/recall performance of TransVCL on [VCSL benchmark](https://github.com/alipay/VCSL#benchmark) is indicated below:
+
+| Performance  | Recall | Precision |  Fscore   |
+|:-------------|:------:|:---------:|:---------:|
+| HV           | 86.94  |   36.83   |   51.73   |
+| TN           | 75.25  |   51.80   |   61.36   |
+| DP           | 49.48  |   60.61   |   54.48   |
+| DTW          | 45.10  |   56.67   |   50.23   |
+| SPD          | 56.49  |   68.60   |   61.96   |
+| **TransVCL** | 65.59  |   67.46   | **66.51** |
+
+
+## Acknowledgements
+We referenced the repos below for the code
+- [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX).
+- [LoFTR](https://github.com/zju3dv/LoFTR). 
+- [VCSL](https://github.com/alipay/VCSL)
+
+Thanks for their wonderful works.
 
 ## Cite TransVCL
 If the code is helpful for your work, please cite our paper
@@ -38,7 +58,7 @@ If the code is helpful for your work, please cite our paper
   title={TransVCL: Attention-enhanced Video Copy Localization Network with Flexible Supervision},
   author={He, Sifeng and Yue, He and Lu, Minlong and others},
   booktitle={37th AAAI Conference on Artificial Intelligence: AAAI 2023},
-  year={2022}
+  year={2023}
 }
 
 @inproceedings{he2022large,

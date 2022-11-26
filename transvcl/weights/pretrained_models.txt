@@ -1,0 +1,5 @@
+model_1 (trained in fully supervised setting on VCSL dataset and used to reproduce results in Table 1):
+https://drive.google.com/file/d/19H45GO_mVpwVpcPQIOyseCBmjpdYtYv4/view?usp=sharing
+
+model_2 (trained with weakly semi-supervised setting on VCSL and FIVR&SVD and used to reproduce results in Table 5):
+https://drive.google.com/file/d/1fRfmalK2jD6KuyOITIoOu8qrXhm7iDz0/view?usp=sharing
