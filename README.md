@@ -1,7 +1,7 @@
-# TransVCL: Attention-enhanced Video Copy Localization Network with Flexible Supervision [AAAI2023]
+# TransVCL: Attention-enhanced Video Copy Localization Network with Flexible Supervision [AAAI2023 Oral]
 
 ## Introduction
-TransVCL is a novel network with joint optimization of multiple components for segment-level video copy detection. It achieves the state-of-the-art performance in video copy segment localization benchmark and can also be flexibly extended to semi-supervised settings. This paper is accepted by AAAI2023. The details of TransVCL are indicated in [Link](https://arxiv.org/abs/2211.13090).
+TransVCL is a novel network with joint optimization of multiple components for segment-level video copy detection. It achieves the state-of-the-art performance in video copy segment localization benchmark and can also be flexibly extended to semi-supervised settings. This paper is accepted by AAAI2023. The details of TransVCL are indicated in [arXiv Link](https://arxiv.org/abs/2211.13090).
 ![vcsl](./fig.png)
 
 ## Preparations
@@ -47,7 +47,7 @@ After executing the above several steps, the overall segment-level precision/rec
 We referenced the repos below for the code
 - [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX).
 - [LoFTR](https://github.com/zju3dv/LoFTR). 
-- [VCSL](https://github.com/alipay/VCSL)
+- [VCSL](https://github.com/alipay/VCSL).
 
 Thanks for their wonderful works.
 
@@ -77,7 +77,7 @@ The code is released under MIT license
 ```bash
 MIT License
 
-Copyright (c) 2022 Ant Group
+Copyright (c) 2023 Ant Group
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
